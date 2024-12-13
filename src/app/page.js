@@ -5,10 +5,6 @@ import api from "@/core/config/api";
 async function getTour() {
   const res = await api.get("/tour");
 
-  if (!response.ok) {
-    throw new Error(`HTTP error! status: ${response?.status}`);
-  }
-
   return res.json();
 }
 
