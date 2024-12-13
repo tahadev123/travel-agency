@@ -1,9 +1,8 @@
 import HomePage from "@/components/templates/HomePage";
 import CheckInternet from "../core/utils/CheckInternet";
-import api from "@/core/config/api";
 
 async function getTour() {
-  const res = await api.get("/tour");
+  const res = await fetch("http://localhost:6500/tour");
 
   return res.json();
 }
