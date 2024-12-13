@@ -1,0 +1,20 @@
+.container button {
+  width: 166px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 2px solid #28a745;
+  background-color: transparent;
+  font-family: yekan-bakh;
+  font-size: 18px;
+  color: #28a745;
+  line-height: 28.13px;
+  transition: all ease-out 0.3s;
+  cursor: pointer;
+}
+
+.container img {
+  margin-left: 10px;
+}

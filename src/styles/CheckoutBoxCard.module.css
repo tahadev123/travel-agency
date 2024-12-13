@@ -1,0 +1,35 @@
+.checkoutBox {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  border-top: 1px solid #0000001f;
+  align-items: center;
+}
+
+.checkoutBox p {
+  margin: 10px;
+}
+
+.checkoutBox span:first-child {
+  font-size: 18px;
+  margin-left: 5px;
+  color: #009eca;
+}
+
+.checkoutBox span:last-of-type {
+  font-size: 12px;
+  color: #000;
+}
+
+.checkoutBox button {
+  width: 64px;
+  height: 25px;
+  background-color: #28a745;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-family: yekan-bakh;
+  backdrop-filter: blur(4px);
+  font-size: 15px;
+  margin: 10px;
+}

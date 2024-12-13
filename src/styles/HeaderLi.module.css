@@ -1,0 +1,17 @@
+.container ul {
+  display: flex;
+}
+
+.container li {
+  list-style: none;
+  padding: 15px;
+  margin-right: 20px;
+}
+
+.container a {
+  font-size: 16px;
+}
+
+.active {
+  color: #28a745;
+}

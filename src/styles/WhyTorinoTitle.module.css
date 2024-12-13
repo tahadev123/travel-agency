@@ -1,0 +1,32 @@
+.whyTorino {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.questionIcon {
+  width: 59px;
+  height: 59px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #28a745 0%, #10411b 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.questionIcon span:first-child {
+  font-size: 38px;
+  color: #fff;
+  margin-top: 6px;
+  font-family: vazir;
+}
+
+.whyTorino h1 {
+  font-size: 40px;
+  font-family: vazir;
+}
+
+.whyTorino span {
+  color: #28a745;
+}

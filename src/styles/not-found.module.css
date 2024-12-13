@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.right {
+  width: 50%;
+  float: right;
+}
+
+.left {
+  width: 50%;
+  float: left;
+}
+
+.right button {
+  width: 361px;
+  height: 75px;
+  border-radius: 16px;
+  background-color: #d8ffe1;
+  border: none;
+  padding: 8px;
+}
+
+.right a {
+  color: #28a745;
+  font-size: 28px;
+  font-family: "yekan-bakh-bold";
+}
+
+.right h1 {
+  font-size: 36px;
+  color: #282828;
+  width: 399px;
+  word-spacing: 3px;
+}

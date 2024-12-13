@@ -1,0 +1,87 @@
+.container {
+  display: flex;
+  align-items: center;
+  padding-right: 5px;
+  gap: 10px;
+  flex: 1;
+  border-left: 1px solid #00000026;
+  position: relative;
+}
+
+.container:last-of-type {
+  border: none;
+}
+
+.container input {
+  appearance: none;
+  padding-right: 10px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  flex: 1;
+  height: 55px;
+  font-family: yekan-bakh;
+}
+
+.container p {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.container input::placeholder {
+  font-size: 20px;
+  font-family: yekan-bakh;
+  color: #2c2c2c;
+}
+
+.recomendedCities {
+  width: 220px;
+  height: auto;
+  padding: 0;
+  border-radius: 8px;
+  border: 1px solid #00000033;
+  background-color: #fff;
+  position: absolute;
+  right: -6%;
+  top: 125%;
+}
+
+.recomendedCities h4 {
+  width: 200px;
+  height: 25px;
+  border-radius: 11px 11px 0px 0px;
+  padding: 10px;
+  background-color: #f8f8f8;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: #282828b2;
+}
+
+.recomendedCities > div {
+  width: 220px;
+  height: 50px;
+  border-bottom: 1px solid #0000001f;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.recomendedCities p {
+  text-align: right;
+  margin-right: 10px;
+  font-size: 16px;
+  color: #282828;
+}
+
+.recomendedCities img {
+  margin-right: 12px;
+}
+
+.datePicker {
+  position: absolute;
+  right: -35%;
+}
