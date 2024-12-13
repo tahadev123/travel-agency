@@ -6,7 +6,7 @@ async function getTour() {
   const res = await api.get("/tour");
 
   if (!response.ok) {
-    throw new Error(`HTTP error! status: ${response.status}`);
+    throw new Error(`HTTP error! status: ${response?.status}`);
   }
 
   return res.json();
