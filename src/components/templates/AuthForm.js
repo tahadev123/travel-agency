@@ -7,7 +7,7 @@ import CheckOTPForm from "../organisms/CheckOTPForm";
 
 import toast from "react-hot-toast";
 import { useSendOtp } from "@/core/services/mutations";
-import { isValidPhoneNumber } from "@/core/utils/isValidPhoneNumber";
+import { isValidPhoneNumber } from "@/core/utils/validation";
 
 function AuthForm() {
   const { isShowModal, setIsShowModal } = useContext(ModalProvider);

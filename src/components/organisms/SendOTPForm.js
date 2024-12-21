@@ -3,7 +3,7 @@ import { useState, useContext } from "react";
 import ModalProvider from "@/partials/context/ShowModalContext";
 import Image from "next/image";
 import closeIcon from "../../assets/icons/close.svg";
-import styles from "../../styles/SendOTPForm.module.css";
+import styles from "../../styles/organismsStyles/SendOTPForm.module.css";
 
 function SendOTPForm({ phoneNumber, setPhoneNumber, sendOtpHandler, error }) {
   const { setIsShowModal } = useContext(ModalProvider);

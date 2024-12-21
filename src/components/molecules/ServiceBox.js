@@ -1,5 +1,5 @@
-import ImageServices from "../atoms/ImageServices";
-import TitleServices from "../atoms/TitleServices";
+import ImageServices from "../atoms/HomePageAtoms/ImageServices";
+import TitleServices from "../atoms/HomePageAtoms/TitleServices";
 
 function ServiceBox({ title, description, imageSrc, imageAlt }) {
   return (

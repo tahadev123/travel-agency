@@ -1,0 +1,76 @@
+.profileBox {
+  z-index: 100;
+  position: absolute;
+  top: 65px;
+  left: 6%;
+  width: 246px;
+  height: 152px;
+  background-color: #fff;
+  border-radius: 11px;
+}
+
+.phoneNumberBox {
+  display: flex;
+  align-items: center;
+  width: 246px;
+  height: 44px;
+  border-radius: 11px 11px 0 0;
+  background-color: #f3f3f3;
+}
+
+.phoneNumberBox > div {
+  width: 28px;
+  height: 28px;
+  background-color: #d9d9d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 0 12px;
+}
+
+.phoneNumberBox p {
+  margin: 0;
+  font-size: 16px;
+  color: #10411b;
+  margin-top: 5px;
+}
+
+.DetailsAccountBox,
+.deleteAccountBox {
+  display: flex;
+  align-items: center;
+  width: 222px;
+  height: 53px;
+  padding: 0 12px;
+  cursor: pointer;
+}
+
+.DetailsAccountBox > div {
+  margin-top: 6px;
+}
+
+.DetailsAccountBox img {
+  margin-left: 12px;
+}
+
+.DetailsAccountBox p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.deleteAccountBox {
+  border-top: 1px solid #0000001f;
+}
+
+.deleteAccountBox img {
+  display: flex;
+  align-items: center;
+  margin-left: 12px;
+}
+
+.deleteAccountBox p {
+  margin: 0;
+  color: #d40000;
+  font-size: 14px;
+}

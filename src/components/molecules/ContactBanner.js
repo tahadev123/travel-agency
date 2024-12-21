@@ -1,6 +1,6 @@
-"use client"
-import ImageContactBanner from "../atoms/ImageContactBanner";
-import TitleContactBanner from "../atoms/TitleContactBanner";
+"use client";
+import ImageContactBanner from "../atoms/HomePageAtoms/ImageContactBanner";
+import TitleContactBanner from "../atoms/HomePageAtoms/TitleContactBanner";
 import contactUsImage from "../../assets/images/contact-us-banner.png";
 import styled from "styled-components";
 

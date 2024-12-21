@@ -1,7 +1,7 @@
-"use client"
-import FooterLi from "../atoms/FooterLi";
-import FooterLogo from "../atoms/FooterLogo";
-import FooterNamad from "../atoms/FooterNamad";
+"use client";
+import FooterLi from "../atoms/HomePageAtoms/FooterLi";
+import FooterLogo from "../atoms/HomePageAtoms/FooterLogo";
+import FooterNamad from "../atoms/HomePageAtoms/FooterNamad";
 import styled from "styled-components";
 
 const Div = styled.div`

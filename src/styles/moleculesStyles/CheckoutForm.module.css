@@ -1,0 +1,11 @@
+.checkoutForm {
+  padding: 0 15px;
+  background-color: #fff;
+  width: 68%;
+  height: auto;
+  min-height: 203px;
+  border-radius: 10px;
+  border: 1px solid #00000033;
+  margin-top: 35px;
+  padding-bottom: 23px;
+}

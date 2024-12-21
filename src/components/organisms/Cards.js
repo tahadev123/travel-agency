@@ -1,5 +1,5 @@
-import styles from "../../styles/Cards.module.css";
 import Card from "../molecules/Card";
+import styles from "../../styles/organismsStyles/Cards.module.css";
 
 function Cards({ data }) {
   return (

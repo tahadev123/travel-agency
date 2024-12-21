@@ -1,8 +1,11 @@
 import Layout from "@/components/templates/Layout";
-import "../styles/globals.css";
 import TanstackQueryProvider from "../partials/providers/TanstackQueryProvider";
 import { ShowModalContext } from "@/partials/context/ShowModalContext";
+import AuthForm from "@/components/templates/AuthForm";
+import ModalContainer from "@/partials/containers/ModalContainer";
 import { Toaster } from "react-hot-toast";
+
+import "../styles/globals.css";
 
 export const metadata = {
   title: "Create Next App",
@@ -13,10 +16,14 @@ function RootLayout({ children }) {
   return (
     <html lang="fa" dir="rtl">
       <body>
-        <div className="container">
+        <div>
           <TanstackQueryProvider>
             <ShowModalContext>
-              <Layout>{children}</Layout>
+              <Layout>
+                {children}
+                <AuthForm />
+                <ModalContainer />
+              </Layout>
             </ShowModalContext>
           </TanstackQueryProvider>
           <Toaster />

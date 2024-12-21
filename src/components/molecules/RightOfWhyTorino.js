@@ -1,7 +1,7 @@
-"use client"
+"use client";
 import React from "react";
-import WhyTorinoTitle from "../atoms/WhyTorinoTitle";
-import WhyTorinoDescription from "../atoms/WhyTorinoDescription";
+import WhyTorinoTitle from "../atoms/HomePageAtoms/WhyTorinoTitle";
+import WhyTorinoDescription from "../atoms/HomePageAtoms/WhyTorinoDescription";
 import styled from "styled-components";
 
 const Div = styled.div`

@@ -1,8 +1,9 @@
 .container {
   display: flex;
-  width: 100%;
+  width: 82%;
   align-items: center;
   margin-top: 30px;
+  padding: 0 126px;
 }
 
 .right {
@@ -13,6 +14,8 @@
 .left {
   width: 50%;
   float: left;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .right h1 {
@@ -25,4 +28,22 @@
 .right h3 {
     font-size: 24px;
     color: #282828;
+}
+
+@media (min-width: 1870px) {
+  .container {
+    width: 86%;
+  }
+}
+
+@media (min-width: 2200px) {
+  .container {
+    width: 88%;
+  }
+}
+
+@media (min-width: 2500px) {
+  .container {
+    width: 89%;
+  }
 }

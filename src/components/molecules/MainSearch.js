@@ -1,8 +1,9 @@
-"use client"
+"use client";
 import { useState } from "react";
-import TextInput from "../atoms/TextInput";
-import DateInput from "../atoms/DateInput";
-import styles from "../../styles/MainSearch.module.css";
+import TextInput from "../atoms/HomePageAtoms/TextInput";
+import DateInput from "../atoms/HomePageAtoms/DateInput";
+
+import styles from "../../styles/moleculesStyles/MainSearch.module.css";
 import calendarIcon from "../../assets/icons/calendar.svg";
 import searchIcon from "../../assets/icons/global-search.svg";
 import locationIcon from "../../assets/icons/location.svg";
@@ -10,14 +11,14 @@ import locationIcon from "../../assets/icons/location.svg";
 function MainSearch() {
   const [inputValue, setInputValue] = useState({
     origin: "",
-    destination: ""
+    destination: "",
   });
 
   const changeHandler = (e) => {
-    const name = e.target.name
-    const value = e.target.value
+    const name = e.target.name;
+    const value = e.target.value;
 
-    setInputValue({...inputValue, [name]: value})
+    setInputValue({ ...inputValue, [name]: value });
   };
 
   return (

@@ -1,5 +1,5 @@
 import MainSearch from "../molecules/MainSearch"
-import styles from "../../styles/MainSearchSite.module.css"
+import styles from "../../styles/organismsStyles/MainSearchSite.module.css"
 
 function MainSearchSite() {
   return (

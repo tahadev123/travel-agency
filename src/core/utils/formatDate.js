@@ -1,5 +1,3 @@
-import moment from "jalali-moment";
-
 const formatDate = (date) => {
   const millisecondDate = new Date(date);
   const formatDate = millisecondDate.getTime();

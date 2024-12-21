@@ -1,7 +1,7 @@
-import HeaderLi from "../atoms/HeaderLi";
-import Logo from "../atoms/Logo";
-import RegisterAndLoginButton from "../atoms/RegisterAndLoginButton";
-import styles from "../../styles/Navbar.module.css";
+import HeaderLi from "../atoms/HomePageAtoms/HeaderLi";
+import Logo from "../atoms/HomePageAtoms/Logo";
+import RegisterAndLoginButton from "../atoms/HomePageAtoms/RegisterAndLoginButton";
+import styles from "../../styles/moleculesStyles/Navbar.module.css";
 
 function Navbar() {
   return (

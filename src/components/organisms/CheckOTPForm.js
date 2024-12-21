@@ -3,15 +3,12 @@ import { useState, useEffect } from "react";
 import OtpInput from "react18-input-otp";
 import { useCheckOtp } from "@/core/services/mutations";
 import { setCookie } from "@/core/utils/cookie";
+import { convertToPersianNumber } from "@/core/utils/convertToPersianNumber";
 
 import backIcon from "../../assets/icons/Line arrow-left.svg";
 import Image from "next/image";
-import styles from "../../styles/CheckOTPForm.module.css";
-
-function convertToPersianNumber(num) {
-  const persianDigits = "۰۱۲۳۴۵۶۷۸۹";
-  return num.toString().replace(/\d/g, (digit) => persianDigits[digit]);
-}
+import styles from "../../styles/organismsStyles/CheckOTPForm.module.css";
+import toast from "react-hot-toast";
 
 function CheckOTPForm({
   phoneNumber,
@@ -54,9 +51,10 @@ function CheckOTPForm({
           setCookie("refreshToken", data?.data?.refreshToken, 365);
           setIsShowModal(false);
           setStep(1);
+          toast.success("ثبت نام با موفقیت انجام شد")
         },
         onError: (error) => {
-          console.log(error);
+          toast.error(error.message)
         },
       }
     );
@@ -95,7 +93,7 @@ function CheckOTPForm({
               onClick={() => {
                 sendOtpHandler();
                 setIsFinished(false);
-                setRemainingTime(2 * 60);
+                setRemainingTime(1.5 * 60);
               }}
             >
               ارسال مجدد کد

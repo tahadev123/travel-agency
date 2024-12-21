@@ -1,8 +1,9 @@
-import CheckoutBoxCard from "../atoms/CheckoutBoxCard";
-import DetailsCard from "../atoms/DetailsCard";
-import ImageCard from "../atoms/ImageCard";
-import TitleCard from "../atoms/TitleCard";
-import styles from "../../styles/Card.module.css";
+import CheckoutBoxCard from "../atoms/HomePageAtoms/CheckoutBoxCard";
+import DetailsCard from "../atoms/HomePageAtoms/DetailsCard";
+import ImageCard from "../atoms/HomePageAtoms/ImageCard";
+import TitleCard from "../atoms/HomePageAtoms/TitleCard";
+
+import styles from "../../styles/moleculesStyles/Card.module.css";
 
 function Card({ data }) {
   return (
@@ -17,7 +18,7 @@ function Card({ data }) {
             fleetVehicle={tour.fleetVehicle}
             options={tour.options}
           />
-          <CheckoutBoxCard price={tour.price} />
+          <CheckoutBoxCard price={tour.price} id={tour.id} />
         </div>
       ))}
     </div>

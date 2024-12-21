@@ -1,8 +1,8 @@
 "use client";
 import { useState } from "react";
-import WhyTorinoNextStep from "../atoms/WhyTorinoNextStep";
+import WhyTorinoNextStep from "../atoms/HomePageAtoms/WhyTorinoNextStep";
 import styled from "styled-components";
-import WhyTorinoSlider from "../atoms/WhyTorinoSlider";
+import WhyTorinoSlider from "../atoms/HomePageAtoms/WhyTorinoSlider";
 
 const Div = styled.div`
   width: 50%;

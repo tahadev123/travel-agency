@@ -1,0 +1,73 @@
+.tourImage img {
+  width: 397px;
+  height: 265px;
+  border-radius: 12px;
+  margin-top: 29px;
+  margin-right: 20px;
+}
+
+.tourDetails {
+  width: 100%;
+  padding: 0 25px;
+}
+
+.tourDetails h2 {
+  font-size: 32px;
+  margin-bottom: 0;
+}
+
+.startAndEnd {
+  font-size: 20px;
+  word-spacing: 2px;
+}
+
+.options {
+  display: flex;
+}
+
+.option {
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  color: #7d7d7d;
+}
+
+.option img {
+  margin-left: 10px;
+}
+
+.checkout {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkout p {
+  font-size: 28px;
+  color: #009eca;
+}
+
+.checkout span {
+  font-size: 14px;
+  color: #000;
+  margin-right: 5px;
+}
+
+.checkout button {
+  width: 204px;
+  height: 56px;
+  background-color: #28a745;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-family: "yekan-bakh";
+  font-size: 24px;
+  transition: all ease-in 0.2s;
+  cursor: pointer;
+}
+
+.checkout button:hover {
+  background-color: #10411b;
+}

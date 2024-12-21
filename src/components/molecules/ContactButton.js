@@ -1,5 +1,5 @@
-"use client"
-import ContactUsButton from "../atoms/ContactUsButton";
+"use client";
+import ContactUsButton from "../atoms/HomePageAtoms/ContactUsButton";
 import styled from "styled-components";
 
 const Div = styled.div`
