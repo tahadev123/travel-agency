@@ -6,6 +6,7 @@ function Footer() {
   return (
     <>
       <div className={styles.footer}>
+      <div className="borderTop"></div>
         <FooterBox />
         <PrivacyPolicy />
       </div>

@@ -1,0 +1,112 @@
+.boxs {
+  padding-bottom: 50px;
+}
+
+.boxs h4 {
+  margin: 15px 0;
+  margin-bottom: 10px;
+  font-weight: 400;
+  word-spacing: 2px;
+}
+
+.information {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.boxs p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #282828;
+  width: 94px;
+}
+
+.boxs span {
+  margin-right: 30px;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "vazir";
+  color: #000;
+  margin: 6px 25px;
+}
+
+.emailAndEdit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+}
+
+.emailAndEdit p {
+  display: flex;
+  align-items: center;
+}
+
+.boxs button {
+  width: 118px;
+  background-color: transparent;
+  border: none;
+  color: #009eca;
+  font-family: "yekan-bakh";
+  display: flex;
+  justify-content: flex-end;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.boxs img {
+  margin-left: 10px;
+}
+
+.personalInformation,
+.bankAccountInformation {
+  width: 100%;
+  height: 171px;
+  border: 1px solid #00000033;
+  border-radius: 10px;
+  margin-top: 25px;
+  padding: 0 15px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  width: 77%;
+}
+
+.twoValue {
+  display: flex;
+  align-items: center;
+}
+
+.oneValue {
+  display: flex;
+  align-items: normal;
+  width: 225px;
+}
+
+.oneValue span {
+  margin-top: 14px;
+}
+
+.value {
+  display: flex;
+  flex-direction: column;
+  width: 130px;
+}
+
+.personalInformation p {
+  margin: 26px 0;
+}
+
+.personalInformation span {
+  margin: 13px 25px;
+}

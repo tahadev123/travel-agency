@@ -1,3 +1,5 @@
+import moment from "jalali-moment";
+
 const formatDate = (date) => {
   const millisecondDate = new Date(date);
   const formatDate = millisecondDate.getTime();
@@ -18,14 +20,33 @@ const formatDate = (date) => {
   return dateFa;
 };
 
+const convertToPersianDate = (gregorianDate) => {
+  const persianDate = moment(gregorianDate)
+    .locale("fa")
+    .format("YYYY/MM/DD - HH:mm:ss");
+
+  return persianDate;
+};
+
 const calculateTripTime = (startDate, endDate) => {
   const date1 = new Date(startDate);
   const date2 = new Date(endDate);
 
   const diffTime = Math.abs(date2 - date1);
   const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
-  
-  return diffDays
+
+  return diffDays;
 };
 
-export { formatDate, calculateTripTime };
+const checkTravelDate = (startDate) => {
+  const today = new Date();
+  const start = new Date(startDate);
+
+  if (start < today) {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+export { formatDate, convertToPersianDate, calculateTripTime, checkTravelDate };

@@ -1,0 +1,37 @@
+.formContainer {
+  display: flex;
+}
+
+.form {
+  display: flex;
+}
+
+.formContainer input {
+  width: 245px;
+  height: 45px;
+  border: 1px solid #00000080;
+  border-radius: 5px;
+  font-family: "yekan-bakh";
+  padding-right: 10px;
+  margin: 0;
+}
+
+.formContainer input:focus {
+  outline: none;
+}
+
+.submitBtn {
+  width: 122px;
+  height: 49px;
+  background-color: #28a745;
+  border: none;
+  font-family: yekan-bakh;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-right: 20px;
+  cursor: pointer;
+}

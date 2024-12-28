@@ -1,0 +1,44 @@
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  width: 77%;
+}
+
+.twoValue {
+  display: flex;
+  align-items: center;
+}
+
+.oneValue {
+  display: flex;
+  align-items: normal;
+  width: 225px;
+}
+
+.oneValue span {
+  margin-top: 14px;
+}
+
+.value {
+  display: flex;
+  flex-direction: column;
+  width: 130px;
+}
+
+.editBtn {
+  width: 118px;
+  background-color: transparent;
+  border: none;
+  color: #009eca;
+  font-family: "yekan-bakh";
+  display: flex;
+  justify-content: flex-end;
+  font-size: 14px;
+  cursor: pointer;
+}

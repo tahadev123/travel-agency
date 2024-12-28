@@ -1,0 +1,65 @@
+.formContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.formContainer input,
+.formContainer select {
+  width: 245px;
+  height: 45px;
+  border: 1px solid #00000080;
+  border-radius: 5px;
+  font-family: "yekan-bakh";
+  padding-right: 10px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+.formContainer input:focus,
+.formContainer select:focus {
+  outline: none;
+}
+
+.formContainer select {
+  width: 260px;
+  padding: 0 10px;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  height: 60px;
+  border-top: 1px solid #00000033;
+}
+
+.submitBtn {
+  width: 144px;
+  height: 41px;
+  background-color: #28a745;
+  border: none;
+  font-family: yekan-bakh;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.cancelBtn {
+  width: 144px;
+  height: 41px;
+  border: 2px solid #28a745;
+  color: #28a745;
+  font-family: yekan-bakh;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}

@@ -1,0 +1,9 @@
+.bankAccountInformation {
+  width: 100%;
+  min-height: 171px;
+  height: auto;
+  border: 1px solid #00000033;
+  border-radius: 10px;
+  margin-top: 25px;
+  padding: 0 15px;
+}

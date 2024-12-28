@@ -1,0 +1,8 @@
+.accountInformation {
+  width: 100%;
+  min-height: 115px;
+  height: auto;
+  border: 1px solid #00000033;
+  border-radius: 10px;
+  padding: 0 15px;
+}

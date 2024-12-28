@@ -1,0 +1,34 @@
+.container {
+  border: 1px solid #00000033;
+  border-radius: 10px;
+}
+
+.container table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.container th,
+.container td {
+  padding: 15px;
+  text-align: center;
+}
+
+.container th {
+  background-color: #f1f1f1;
+  font-weight: 400;
+  text-align: right;
+}
+
+.container td {
+  font-size: 14px;
+  text-align: right;
+  font-family: vazir;
+}
+
+.date {
+    direction: ltr;
+}

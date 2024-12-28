@@ -1,15 +1,7 @@
-.borderTop {
-  border: 1px solid #00000033;
-  width: 98.7vw;
-  position: absolute;
-  left: 0;
-  right: 0;
-  padding: 0 !important;
-}
-
 .servicesbox {
   display: flex;
   justify-content: space-between;
   margin: 30px 0;
   padding: 0 40px;
+  border-top: 1px solid #00000033;
 }

@@ -1,4 +1,5 @@
-.container button {
+.loginBtn1,
+.loginBtn2 {
   width: 166px;
   height: 44px;
   display: flex;
@@ -15,6 +16,11 @@
   cursor: pointer;
 }
 
+.loginBtn2 {
+  width: 40px !important;
+  display: none;
+}
+
 .registered {
   display: flex;
   align-items: center;
@@ -24,6 +30,41 @@
 .registered p {
   font-size: 18px;
   color: #28a745;
-  margin: 0 10px;
+  margin: 0 6px;
   margin-top: 3px;
+  font-family: "vazir";
+}
+
+@media (max-width: 1070px) {
+  .registered img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .registered p {
+    font-size: 16px;
+  }
+
+  .loginBtn2 {
+    width: 140px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .loginBtn2 img {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+@media (max-width: 1003px) {
+  .loginBtn1 {
+    display: none;
+  }
+
+  .loginBtn2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

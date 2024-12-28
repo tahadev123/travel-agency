@@ -3,10 +3,10 @@ import { useState } from "react";
 import TextInput from "../atoms/HomePageAtoms/TextInput";
 import DateInput from "../atoms/HomePageAtoms/DateInput";
 
-import styles from "../../styles/moleculesStyles/MainSearch.module.css";
 import calendarIcon from "../../assets/icons/calendar.svg";
 import searchIcon from "../../assets/icons/global-search.svg";
 import locationIcon from "../../assets/icons/location.svg";
+import styles from "../../styles/moleculesStyles/MainSearch.module.css";
 
 function MainSearch() {
   const [inputValue, setInputValue] = useState({
@@ -22,31 +22,37 @@ function MainSearch() {
   };
 
   return (
-    <div className={styles.content}>
+    <form className={styles.content}>
       <p className={styles.title}>
         <span>تورینو</span> برگزار کننده بهترین تورهای داخلی و خارجی
       </p>
       <div className={styles.searchBar}>
-        <TextInput
-          placeholder="مبدا"
-          icon={locationIcon}
-          name="origin"
-          value={inputValue}
-          changeHandler={changeHandler}
-          setInputValue={setInputValue}
-        />
-        <TextInput
-          placeholder="مقصد"
-          icon={searchIcon}
-          name="destination"
-          value={inputValue}
-          changeHandler={changeHandler}
-          setInputValue={setInputValue}
-        />
-        <DateInput placeholder="تاریخ" icon={calendarIcon} />
-        <button>جستجو</button>
+        <div className={styles.inputs}>
+          <div className={styles.textInput}>
+            <TextInput
+              placeholder="مبدا"
+              icon={locationIcon}
+              name="origin"
+              value={inputValue}
+              changeHandler={changeHandler}
+              setInputValue={setInputValue}
+            />
+            <TextInput
+              placeholder="مقصد"
+              icon={searchIcon}
+              name="destination"
+              value={inputValue}
+              changeHandler={changeHandler}
+              setInputValue={setInputValue}
+            />
+          </div>
+          <div className={styles.dateInput}>
+            <DateInput placeholder="تاریخ" icon={calendarIcon} />
+          </div>
+        </div>
+        <button type="submit">جستجو</button>
       </div>
-    </div>
+    </form>
   );
 }
 

@@ -15,3 +15,15 @@
 .active {
   color: #28a745;
 }
+
+@media (max-width: 1070px) {
+  .container a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1003px) {
+  .container ul {
+    display: none;
+  }
+}

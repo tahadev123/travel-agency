@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.hamburMenu {
+  display: none;
+}
+
+@media (max-width: 1070px) {
+  .logo {
+    width: 126px;
+    height: 39px;
+  }
+}
+
+@media (max-width: 1003px) {
+  .logo {
+    display: none;
+  }
+
+  .hamburMenu {
+    display: block;
+  }
+}

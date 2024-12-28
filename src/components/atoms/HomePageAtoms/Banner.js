@@ -5,7 +5,7 @@ import styles from "../../../styles/atomsStyles/Banner.module.css";
 function Banner() {
   return (
     <div className={styles.container}>
-      <Image src={banner} width={1440} height={350} alt="banner" />
+      <Image src={banner} alt="banner" />
     </div>
   );
 }

@@ -3,12 +3,11 @@ import ServiceBox from "../molecules/ServiceBox";
 import cheapIcon from "../../assets/icons/cheap.png";
 import supportIcon from "../../assets/icons/support.png";
 import satisfactionIcon from "../../assets/icons/satisfaction.png";
-import styles from "../../styles/organismsStyles/ServicesBox.module.css"
+import styles from "../../styles/organismsStyles/ServicesBox.module.css";
 
 function ServicesBox() {
   return (
     <>
-      <div className="borderTop"></div>
       <div className={styles.servicesbox}>
         <ServiceBox
           title="بصرفه ترین قیمت"

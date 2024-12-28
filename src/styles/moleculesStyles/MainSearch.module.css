@@ -7,7 +7,7 @@
   color: #333;
   width: 90%;
   max-width: 1200px;
-  margin-top: 230px;
+  margin-top: 295px;
 }
 
 .title {
@@ -23,7 +23,7 @@
 }
 
 .searchBar {
-  width: 874px;
+  width: 79%;
   height: 55px;
   display: flex;
   justify-content: space-between;
@@ -35,6 +35,14 @@
   margin: 0 auto;
   gap: 10px;
   backdrop-filter: blur(8px);
+}
+
+.inputs {
+  display: flex;
+}
+
+.textInput {
+  display: flex;
 }
 
 .searchBar button {
@@ -53,4 +61,57 @@
 
 .searchBar button:hover {
   background-color: #227634;
+}
+
+@media (max-width: 1200px) {
+  .searchBar {
+    width: 100%;
+  }
+
+  .searchBar button {
+    width: 95px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1128px) {
+  .searchBar {
+    border: none;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .searchBar button {
+    width: calc(100% - 8px);
+    font-size: 20px;
+  }
+
+  .inputs {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .textInput {
+    width: 100%;
+    display: flex;
+  }
+
+  .dateInput {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 720px) {
+  .title {
+    font-size: 16px;
+  }
 }

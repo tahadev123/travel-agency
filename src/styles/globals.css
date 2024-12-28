@@ -42,10 +42,23 @@ a {
 }
 
 .borderTop {
-  border: 1px solid #00000033;
+  border-top: 1px solid #00000033;
   width: calc(100% - 5px);
+  margin: auto;
   position: absolute;
   left: 0;
   right: 0;
   padding: 0 !important;
+}
+
+@media (max-width: 1200px) {
+  .page-content {
+    padding: 0 80px;
+  }
+}
+
+@media (max-width: 720px) {
+  .page-content {
+    padding: 0 40px;
+  }
 }

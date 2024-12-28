@@ -1,8 +1,10 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import styles from "../../../styles/atomsStyles/Inputs.module.css";
+import { cities } from "@/core/data/citiesData";
+
 import locationIcon from "../../../assets/icons/location.svg";
+import styles from "../../../styles/atomsStyles/Inputs.module.css";
 
 function TextInput({
   placeholder,
@@ -15,15 +17,6 @@ function TextInput({
   const { origin = "", destination = "" } = value;
 
   const [isInputClicked, setIsInputClicked] = useState(false);
-
-  const cities = [
-    { id: 1, cityName: "تهران" },
-    { id: 2, cityName: "سنندج" },
-    { id: 3, cityName: "تبریز" },
-    { id: 4, cityName: "شیراز" },
-    { id: 5, cityName: "مشهد" },
-    { id: 6, cityName: "کیش" },
-  ];
 
   const userInput = name === "origin" ? origin.trim() : destination.trim();
 
@@ -46,7 +39,7 @@ function TextInput({
   }
 
   return (
-    <div className={styles.container}>
+    <div className={styles.containerText}>
       <Image src={icon} className={styles.icon} alt="iconinput" />
       <input
         type="text"

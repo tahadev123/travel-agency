@@ -1,0 +1,30 @@
+.boxs {
+  padding-bottom: 50px;
+}
+
+.boxs h4 {
+  margin: 15px 0;
+  margin-bottom: 10px;
+  font-weight: 400;
+  word-spacing: 2px;
+}
+
+.boxs img {
+  margin-left: 10px;
+}
+
+.boxs p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #282828;
+  width: 94px;
+}
+
+.boxs span {
+  margin-right: 30px;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "vazir";
+  color: #000;
+  margin: 13px 25px;
+}

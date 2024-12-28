@@ -1,0 +1,46 @@
+.container {
+  margin-top: 40px;
+  display: flex;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.layout {
+  width: 284px;
+  height: 170px;
+  border: 1px solid #00000033;
+  border-radius: 10px;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-column: span 1 / span 1;
+}
+
+.layout li {
+  height: 55px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #00000033;
+  padding: 0 17px;
+}
+
+.layout li img {
+  margin-left: 10px;
+}
+
+.layout li:last-of-type {
+  border: none;
+}
+
+.content {
+  width: 75%;
+}
+
+.active {
+  background-color: #28a74540;
+}
+
+.active a {
+  color: #28a745;
+}
