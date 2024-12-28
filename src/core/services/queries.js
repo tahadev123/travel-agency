@@ -1,16 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 
 import api from "../config/api";
-import QueryString from "qs";
-
-const useGetTours = (query) => {
-  const url = "tour?" + QueryString.stringify(query);
-
-  const queryFn = () => api.get(url);
-  const queryKey = ["tour", query];
-
-  return useQuery({ queryFn, queryKey, enabled: false });
-};
 
 const useGetUserData = () => {
   const queryFn = async () => await api.get("user/profile");
@@ -33,4 +23,4 @@ const useGetUserTransactions = () => {
   return useQuery({ queryFn, queryKey });
 };
 
-export { useGetTours, useGetUserData, useGetUserTours, useGetUserTransactions };
+export { useGetUserData, useGetUserTours, useGetUserTransactions };
