@@ -1,15 +1,14 @@
 import Image from "next/image";
-import { formatDate } from "@/core/utils/formatDate";
-import { convertToPersianNumber } from "@/core/utils/convertToPersianNumber";
+import { formatDate } from "@/utils/formatDate";
+import { convertToPersianNumber } from "@/utils/convertToPersianNumber";
 
-
-import busIcon from "../../../assets/icons/bus.svg";
-import calendar2Icon from "../../../assets/icons/calendar-2.svg";
-import calendar3Icon from "../../../assets/icons/calendar-3.svg";
-import securityIcon from "../../../assets/icons/security.svg";
-import routingIcon from "../../../assets/icons/routing-2.svg";
-import user2Icon from "../../../assets/icons/profile-2user.svg";
-import styles from "../../../styles/atomsStyles/Options.module.css"
+import busIcon from "@/assets/icons/bus.svg";
+import calendar2Icon from "@/assets/icons/calendar-2.svg";
+import calendar3Icon from "@/assets/icons/calendar-3.svg";
+import securityIcon from "@/assets/icons/security.svg";
+import routingIcon from "@/assets/icons/routing-2.svg";
+import user2Icon from "@/assets/icons/profile-2user.svg";
+import styles from "@/styles/atomsStyles/Options.module.css"
 
 function Options({ data }) {
   return (
@@ -29,10 +28,12 @@ function Options({ data }) {
           </span>
           <p>
             {data.startDate
-              ? `
-                    ${formatDate(data.startDate).day} 
-                    ${formatDate(data.startDate).monthTitle} 
-                    ${formatDate(data.startDate).year}`
+              ?
+                `
+                  ${formatDate(data.startDate).day} 
+                  ${formatDate(data.startDate).monthTitle} 
+                  ${formatDate(data.startDate).year}
+                `
               : null}
           </p>
         </div>
@@ -43,10 +44,12 @@ function Options({ data }) {
           </span>
           <p>
             {data.endDate
-              ? `
-                    ${formatDate(data.endDate).day} 
-                    ${formatDate(data.endDate).monthTitle} 
-                    ${formatDate(data.endDate).year}`
+              ?
+                `
+                  ${formatDate(data.endDate).day} 
+                  ${formatDate(data.endDate).monthTitle} 
+                  ${formatDate(data.endDate).year}
+                `
               : null}
           </p>
         </div>

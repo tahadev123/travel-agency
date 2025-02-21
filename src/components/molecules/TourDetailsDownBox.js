@@ -1,5 +1,5 @@
 import Options from "../atoms/TourDetailsAtoms/Options";
-import styles from "../../styles/moleculesStyles/TourDetailsDownBox.module.css";
+import styles from "@/styles/moleculesStyles/TourDetailsDownBox.module.css";
 
 function TourDetailsDownBox({ data }) {
   return (

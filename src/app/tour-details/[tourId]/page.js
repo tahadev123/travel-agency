@@ -1,10 +1,9 @@
 import TourDetails from "@/components/templates/TourDetailsPage";
 
-function TourDetailsPage() {
-
+function TourDetailsPage({ params }) {
   return (
     <div>
-      <TourDetails />
+      <TourDetails id={params.tourId} />
     </div>
   );
 }

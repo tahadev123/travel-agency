@@ -1,9 +1,18 @@
+"use client"
+import { useState } from "react";
 import CheckoutBox from "../molecules/CheckoutBox";
 import CheckoutForm from "../molecules/CheckoutForm";
 
-import styles from "../../styles/organismsStyles/CheckoutContent.module.css"
+import styles from "@/styles/organismsStyles/CheckoutContent.module.css";
 
-function CheckoutContent({ form, setForm, data }) {
+function CheckoutContent({ data }) {
+  const [form, setForm] = useState({
+    fullName: "",
+    nationalCode: "",
+    birthDate: "",
+    gender: "",
+  });
+
   return (
     <>
       <div className={styles.checkout}>

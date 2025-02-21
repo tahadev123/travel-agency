@@ -1,23 +1,15 @@
-"use client";
 import ImageContactBanner from "../atoms/HomePageAtoms/ImageContactBanner";
 import TitleContactBanner from "../atoms/HomePageAtoms/TitleContactBanner";
-import contactUsImage from "../../assets/images/contact-us-banner.png";
-import styled from "styled-components";
 
-const Div = styled.div`
-  display: flex;
-  justify-content: space-between;
-  width: 73%;
-  background-color: #28a745;
-  border-radius: 10px;
-`;
+import contactUsImage from "@/assets/images/contact-us-banner.png";
+import styles from "@/styles/organismsStyles/BuyByPhoneBanner.module.css";
 
 function ContactBanner() {
   return (
-    <Div>
+    <div className={styles.banner}>
       <TitleContactBanner />
       <ImageContactBanner imageSrc={contactUsImage} />
-    </Div>
+    </div>
   );
 }
 

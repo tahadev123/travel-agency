@@ -1,9 +1,9 @@
 import ServiceBox from "../molecules/ServiceBox";
 
-import cheapIcon from "../../assets/icons/cheap.png";
-import supportIcon from "../../assets/icons/support.png";
-import satisfactionIcon from "../../assets/icons/satisfaction.png";
-import styles from "../../styles/organismsStyles/ServicesBox.module.css";
+import cheapIcon from "@/assets/icons/cheap.png";
+import supportIcon from "@/assets/icons/support.png";
+import satisfactionIcon from "@/assets/icons/satisfaction.png";
+import styles from "@/styles/organismsStyles/ServicesBox.module.css";
 
 function ServicesBox() {
   return (

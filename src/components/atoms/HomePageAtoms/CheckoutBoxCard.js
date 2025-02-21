@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "../../../styles/atomsStyles/CheckoutBoxCard.module.css";
+import styles from "@/styles/atomsStyles/CheckoutBoxCard.module.css";
 
 function CheckoutBoxCard({ price, id }) {
   return (

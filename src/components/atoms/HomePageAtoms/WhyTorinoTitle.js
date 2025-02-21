@@ -1,4 +1,4 @@
-import styles from "../../../styles/atomsStyles/WhyTorinoTitle.module.css"
+import styles from "@/styles/WhyTorino.module.css"
 
 function WhyTorinoTitle() {
   return (

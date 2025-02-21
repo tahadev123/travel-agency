@@ -1,7 +1,7 @@
 import AccountInformation from "../molecules/AccountInformation";
 import PersonalInformation from "../molecules/PersonalInformation";
 import BankAccountInformation from "../molecules/BankAccountInformation";
-import styles from "../../styles/organismsStyles/ProfileBoxs.module.css";
+import styles from "@/styles/organismsStyles/ProfileBoxs.module.css";
 
 function ProfileBoxs({ data, setIsShowEditForm, isShowEditForm, payment }) {
   return (

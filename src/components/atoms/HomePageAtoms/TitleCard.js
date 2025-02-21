@@ -1,4 +1,4 @@
-import styles from "../../../styles/atomsStyles/TitleCard.module.css";
+import styles from "@/styles/atomsStyles/TitleCard.module.css";
 
 function TitleCard({ title }) {
   return (

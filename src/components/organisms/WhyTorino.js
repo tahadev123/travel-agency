@@ -1,20 +1,13 @@
-"use client"
 import LeftOfWhyTorino from "../molecules/LeftOfWhyTorino";
 import RightOfWhyTorino from "../molecules/RightOfWhyTorino";
-import styled from "styled-components";
-
-const Div = styled.div`
-  display: flex;
-  width: 100%;
-  height: 676px;
-`;
+import styles from "@/styles/WhyTorino.module.css";
 
 function WhyTorino() {
   return (
-    <Div>
+    <div className={styles.container}>
       <RightOfWhyTorino />
       <LeftOfWhyTorino />
-    </Div>
+    </div>
   );
 }
 

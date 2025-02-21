@@ -1,7 +1,7 @@
 import Image from "next/image";
-import errorImg from "../assets/images/Error TV.png";
+import errorImg from "@/assets/images/Error TV.png";
 import Link from "next/link";
-import styles from "../styles/not-found.module.css"
+import styles from "@/styles/not-found.module.css"
 
 function NotFoundPage() {
   return (

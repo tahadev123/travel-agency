@@ -1,6 +1,6 @@
 import CheckoutBoxContent from "../atoms/CheckoutPageAtoms/CheckoutBoxContent";
 
-import styles from "../../styles/moleculesStyles/CheckoutBox.module.css";
+import styles from "@/styles/moleculesStyles/CheckoutBox.module.css";
 
 function CheckoutBox({ data, form }) {
   return (

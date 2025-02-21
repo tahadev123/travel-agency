@@ -1,11 +1,11 @@
 import Image from "next/image";
-import { convertToPersianNumber } from "@/core/utils/convertToPersianNumber";
-import { formatDate } from "@/core/utils/formatDate";
+import { convertToPersianNumber } from "@/utils/convertToPersianNumber";
+import { formatDate } from "@/utils/formatDate";
 
-import editIcon from "../../../assets/icons/edit-2.svg";
-import styles from "../../../styles/atomsStyles/PersonalContent.module.css";
+import editIcon from "@/assets/icons/edit-2.svg";
+import styles from "@/styles/atomsStyles/PersonalContent.module.css";
 
-function PersonalContent({ setIsShowEditForm, data }) {
+function PersonalContent({ setIsShowEditForm, isShowEditForm, data }) {
   const { firstName, lastName, gender, nationalCode, birthDate } = data.data;
 
   return (
@@ -13,7 +13,12 @@ function PersonalContent({ setIsShowEditForm, data }) {
       <div className={styles.title}>
         <h4>اطلاعات شخصی</h4>
         <button
-          onClick={() => setIsShowEditForm(true)}
+          onClick={() =>
+            setIsShowEditForm({
+              ...isShowEditForm,
+              PersonalInformationForm: true,
+            })
+          }
           className={styles.editBtn}
         >
           <Image src={editIcon} alt="edit-icon" />

@@ -1,6 +1,7 @@
 import BankAccountContent from "../atoms/ProfileAtoms/BankAccountContent";
-import styles from "../../styles/moleculesStyles/BankAccountInformation.module.css";
 import BankAccountForm from "../organisms/BankAccountForm";
+
+import styles from "@/styles/moleculesStyles/BankAccountInformation.module.css";
 
 function BankAccountInformation({
   isShowEditForm,
@@ -10,11 +11,15 @@ function BankAccountInformation({
   return (
     <>
       <div className={styles.bankAccountInformation}>
-        {isShowEditForm ? (
-          <BankAccountForm setIsShowEditForm={setIsShowEditForm} />
+        {isShowEditForm.BankAccountForm ? (
+          <BankAccountForm
+            setIsShowEditForm={setIsShowEditForm}
+            isShowEditForm={isShowEditForm}
+          />
         ) : (
           <BankAccountContent
             setIsShowEditForm={setIsShowEditForm}
+            isShowEditForm={isShowEditForm}
             payment={payment}
           />
         )}

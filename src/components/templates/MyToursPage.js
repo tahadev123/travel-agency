@@ -1,5 +1,5 @@
 "use client"
-import { useGetUserTours } from "@/core/services/queries";
+import { useGetUserTours } from "@/services/queries";
 import MyTours from "../organisms/MyTours";
 
 function MyToursPage() {

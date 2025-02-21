@@ -1,11 +1,8 @@
-"use client"
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import styles from "../../../styles/atomsStyles/HeaderLi.module.css";
 
-function HeaderLi() {
-  const pathname = usePathname();
+import styles from "@/styles/atomsStyles/HeaderLi.module.css";
 
+function HeaderLi({ pathname }) {
   const isActive = (path) => pathname === path;
 
   return (

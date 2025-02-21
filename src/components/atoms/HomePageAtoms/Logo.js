@@ -1,9 +1,8 @@
-"use client"
 import Image from "next/image";
-import LogoImage from "../../../assets/images/Torino.png";
+import LogoImage from "@/assets/images/Torino.png";
 
-import HamburMenuIcon from "../../../assets/icons/HamburMenu.svg"
-import styles from "../../../styles/atomsStyles/Logo.module.css"
+import HamburMenuIcon from "@/assets/icons/HamburMenu.svg"
+import styles from "@/styles/atomsStyles/Logo.module.css"
 
 function Logo() {
   return (

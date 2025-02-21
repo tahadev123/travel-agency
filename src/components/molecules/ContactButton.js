@@ -1,20 +1,12 @@
-"use client";
 import ContactUsButton from "../atoms/HomePageAtoms/ContactUsButton";
-import styled from "styled-components";
 
-const Div = styled.div`
-  width: 27%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-`;
+import styles from "@/styles/organismsStyles/BuyByPhoneBanner.module.css";
 
 function ContactButton() {
   return (
-    <Div>
+    <div className={styles.contentButton}>
       <ContactUsButton />
-    </Div>
+    </div>
   );
 }
 

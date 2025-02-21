@@ -1,10 +1,10 @@
 import Image from "next/image";
-import { checkTravelDate, formatDate } from "@/core/utils/formatDate";
+import { checkTravelDate, formatDate } from "@/utils/formatDate";
 
-import SunFogIcon from "../../../assets/icons/sun-fog-linear.svg";
-import BusIcon from "../../../assets/icons/bus2.svg";
-import AirPlaneIcon from "../../../assets/icons/airplane.svg";
-import styles from "../../../styles/atomsStyles/UpTours.module.css";
+import SunFogIcon from "@/assets/icons/sun-fog-linear.svg";
+import BusIcon from "@/assets/icons/bus2.svg";
+import AirPlaneIcon from "@/assets/icons/airplane.svg";
+import styles from "@/styles/atomsStyles/UpTours.module.css";
 
 function UpTours({ tourData }) {
   const { title, origin, destination, startDate, fleetVehicle, endDate } =

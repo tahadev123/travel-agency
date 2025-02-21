@@ -1,19 +1,18 @@
+"use client"
 import Image from "next/image";
-import { usePathname, useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
 import toast from "react-hot-toast";
-import { useAddToCart } from "@/core/services/mutations";
-import { convertToPersianNumber } from "@/core/utils/convertToPersianNumber";
-import { calculateTripTime } from "@/core/utils/formatDate";
+import { useAddToCart } from "@/services/mutations";
+import { convertToPersianNumber } from "@/utils/convertToPersianNumber";
+import { calculateTripTime } from "@/utils/formatDate";
 
-import mapIcon from "../../../assets/icons/map.svg";
-import medalStarIcon from "../../../assets/icons/medal-star.svg";
-import userTickIcon from "../../../assets/icons/user-tick.svg";
-import styles from "../../../styles/atomsStyles/ImageAndTitle.module.css";
+import mapIcon from "@/assets/icons/map.svg";
+import medalStarIcon from "@/assets/icons/medal-star.svg";
+import userTickIcon from "@/assets/icons/user-tick.svg";
+import styles from "@/styles/atomsStyles/ImageAndTitle.module.css";
 
-function ImageAndTitle({ data }) {
+function ImageAndTitle({ data, id }) {
   const router = useRouter();
-  const query = usePathname();
-  const id = query.split("/")[2];
 
   const { mutate } = useAddToCart();
 

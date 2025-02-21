@@ -1,10 +1,10 @@
 "use client";
-import { useState } from "react";
 import Image from "next/image";
-import { cities } from "@/core/data/citiesData";
+import { useState } from "react";
+import { cities } from "@/data/citiesData";
 
-import locationIcon from "../../../assets/icons/location.svg";
-import styles from "../../../styles/atomsStyles/Inputs.module.css";
+import locationIcon from "@/assets/icons/location.svg";
+import styles from "@/styles/atomsStyles/Inputs.module.css";
 
 function TextInput({
   placeholder,
@@ -13,6 +13,8 @@ function TextInput({
   value = {},
   changeHandler,
   setInputValue,
+  information,
+  setInformation,
 }) {
   const { origin = "", destination = "" } = value;
 
@@ -25,11 +27,13 @@ function TextInput({
       ? cities
       : cities.filter((city) => city.cityName.includes(userInput));
 
-  const clickHandler = (cityName) => {
+  const clickHandler = (cityName, cityId) => {
     if (name === "origin") {
       setInputValue({ ...value, origin: cityName });
+      setInformation({ ...information, originId: cityId });
     } else {
       setInputValue({ ...value, destination: cityName });
+      setInformation({ ...information, destinationId: cityId });
     }
     setIsInputClicked(false);
   };
@@ -56,7 +60,7 @@ function TextInput({
           {filteredCities.map((city) => (
             <div key={city.id}>
               <Image src={locationIcon} alt="location-icon" />
-              <p onMouseDown={() => clickHandler(city.cityName)}>
+              <p onMouseDown={() => clickHandler(city.cityName, city.id)}>
                 {city.cityName}
               </p>
             </div>

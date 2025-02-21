@@ -1,9 +1,10 @@
 import Image from "next/image";
-import styles from "../../../styles/atomsStyles/WhyTorinoSlider.module.css"
-import travelImage1 from "../../../assets/images/travel-image1.png";
-import travelImage2 from "../../../assets/images/travel-image2.png";
-import travelImage3 from "../../../assets/images/travel-image3.png";
-import travelImage4 from "../../../assets/images/travel-image4.png";
+
+import travelImage1 from "@/assets/images/travel-image1.png";
+import travelImage2 from "@/assets/images/travel-image2.png";
+import travelImage3 from "@/assets/images/travel-image3.png";
+import travelImage4 from "@/assets/images/travel-image4.png";
+import styles from "@/styles/WhyTorino.module.css"
 
 function WhyTorinoSlider({ slider }) {
   return (

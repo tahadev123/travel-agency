@@ -1,14 +1,13 @@
 "use client";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import OtpInput from "react18-input-otp";
-import { useCheckOtp } from "@/core/services/mutations";
-import { setCookie } from "@/core/utils/cookie";
-import { convertToPersianNumber } from "@/core/utils/convertToPersianNumber";
-
-import backIcon from "../../assets/icons/Line arrow-left.svg";
-import Image from "next/image";
-import styles from "../../styles/organismsStyles/CheckOTPForm.module.css";
 import toast from "react-hot-toast";
+import { useCheckOtp } from "@/services/mutations";
+import { convertToPersianNumber } from "@/utils/convertToPersianNumber";
+
+import backIcon from "@/assets/icons/Line arrow-left.svg";
+import styles from "@/styles/organismsStyles/CheckOTPForm.module.css";
 
 function CheckOTPForm({
   phoneNumber,
@@ -46,9 +45,7 @@ function CheckOTPForm({
     mutate(
       { mobile: phoneNumber, code },
       {
-        onSuccess: (data) => {
-          setCookie("accessToken", data?.data?.accessToken, 30);
-          setCookie("refreshToken", data?.data?.refreshToken, 365);
+        onSuccess: () => {
           setIsShowModal(false);
           setStep(1);
           toast.success("ثبت نام با موفقیت انجام شد")
@@ -58,10 +55,6 @@ function CheckOTPForm({
         },
       }
     );
-  };
-
-  const changeHandler = (otp) => {
-    setCode(otp);
   };
 
   return (
@@ -75,7 +68,7 @@ function CheckOTPForm({
         <div style={{ direction: "ltr" }} className={styles.codeBox}>
           <OtpInput
             value={code}
-            onChange={changeHandler}
+            onChange={(otp) => setCode(otp)}
             numInputs={6}
             inputStyle={{
               border: "1px solid silver",

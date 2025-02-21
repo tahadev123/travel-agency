@@ -1,6 +1,7 @@
-import styles from "../../styles/organismsStyles/Footer.module.css";
 import FooterBox from "../molecules/FooterBox";
 import PrivacyPolicy from "../atoms/HomePageAtoms/PrivacyPolicy";
+
+import styles from "@/styles/organismsStyles/Footer.module.css";
 
 function Footer() {
   return (

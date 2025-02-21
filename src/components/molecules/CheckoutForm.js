@@ -1,6 +1,6 @@
 import CheckoutFormContent from "../atoms/CheckoutPageAtoms/CheckoutFormContent";
 
-import styles from "../../styles/moleculesStyles/CheckoutForm.module.css"
+import styles from "@/styles/moleculesStyles/CheckoutForm.module.css"
 
 function CheckoutForm({ form, setForm }) {
   return (

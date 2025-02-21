@@ -1,7 +1,7 @@
 "use server";
 import Image from "next/image";
-import styles from "../../styles/ServerError.module.css";
-import errorImg from "../../assets/images/Error Lamp Robot.png";
+import styles from "@/styles/ServerError.module.css";
+import errorImg from "@/assets/images/Error Lamp Robot.png";
 
 function page() {
   return (

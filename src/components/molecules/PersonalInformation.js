@@ -1,15 +1,23 @@
 import PersonalContent from "../atoms/ProfileAtoms/PersonalContent";
-import styles from "../../styles/moleculesStyles/PersonalInformation.module.css";
 import PersonalInformationForm from "../organisms/PersonalInformationForm";
+
+import styles from "@/styles/moleculesStyles/PersonalInformation.module.css";
 
 function PersonalInformation({ isShowEditForm, setIsShowEditForm, data }) {
   return (
     <>
       <div className={styles.personalInformation}>
-        {isShowEditForm ? (
-          <PersonalInformationForm setIsShowEditForm={setIsShowEditForm} />
+        {isShowEditForm.PersonalInformationForm ? (
+          <PersonalInformationForm
+            setIsShowEditForm={setIsShowEditForm}
+            isShowEditForm={isShowEditForm}
+          />
         ) : (
-          <PersonalContent setIsShowEditForm={setIsShowEditForm} data={data} />
+          <PersonalContent
+            setIsShowEditForm={setIsShowEditForm}
+            isShowEditForm={isShowEditForm}
+            data={data}
+          />
         )}
       </div>
     </>

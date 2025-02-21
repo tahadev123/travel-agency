@@ -1,11 +1,11 @@
 import { useRouter } from "next/navigation";
 import toast from "react-hot-toast";
-import { useCheckout } from "@/core/services/mutations";
-import { convertToPersianNumber } from "@/core/utils/convertToPersianNumber";
-import { calculateTripTime } from "@/core/utils/formatDate";
-import { isValidNationalCode } from "@/core/utils/validation";
+import { useCheckout } from "@/services/mutations";
+import { convertToPersianNumber } from "@/utils/convertToPersianNumber";
+import { calculateTripTime } from "@/utils/formatDate";
+import { isValidNationalCode } from "@/utils/validation";
 
-import styles from "../../../styles/atomsStyles/CheckoutBoxContent.module.css";
+import styles from "@/styles/atomsStyles/CheckoutBoxContent.module.css";
 
 function CheckoutBoxContent({ data, form }) {
   const router = useRouter();

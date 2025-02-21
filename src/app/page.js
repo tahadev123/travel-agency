@@ -1,12 +1,12 @@
 import HomePage from "@/components/templates/HomePage";
-import CheckInternet from "../core/utils/CheckInternet";
+import { serverFetch } from "@/services/http";
 
-export default async function Home() {
+export default async function Home({ searchParams }) {
+  let data = await serverFetch("tour", searchParams, { cache: "no-store" });
+
   return (
     <div>
-      <HomePage />
-
-      <CheckInternet />
+      <HomePage data={data} />
     </div>
   );
 }

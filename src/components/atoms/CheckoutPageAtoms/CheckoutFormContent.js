@@ -1,9 +1,9 @@
 import Image from "next/image";
 import { DatePicker } from "zaman";
 
-import userIcon from "../../../assets/icons/profile3.svg";
-import calendarIcon from "../../../assets/icons/calendar.svg";
-import styles from "../../../styles/atomsStyles/CheckoutFormContent.module.css"
+import userIcon from "@/assets/icons/profile3.svg";
+import calendarIcon from "@/assets/icons/calendar.svg";
+import styles from "@/styles/atomsStyles/CheckoutFormContent.module.css"
 
 function CheckoutFormContent({ form, setForm }) {
   const changeHandler = (e) => {

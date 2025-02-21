@@ -1,5 +1,5 @@
-import { calculateTripTime, formatDate } from "@/core/utils/formatDate";
-import styles from "../../../styles/atomsStyles/DetailsCard.module.css";
+import { calculateTripTime, formatDate } from "@/utils/formatDate";
+import styles from "@/styles/atomsStyles/DetailsCard.module.css";
 
 function DetailsCard({ startDate, endDate, fleetVehicle, options }) {
   return (

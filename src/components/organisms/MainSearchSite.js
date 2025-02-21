@@ -1,12 +1,13 @@
-import MainSearch from "../molecules/MainSearch"
-import styles from "../../styles/organismsStyles/MainSearchSite.module.css"
+import MainSearch from "../molecules/MainSearch";
+
+import styles from "@/styles/organismsStyles/MainSearchSite.module.css";
 
 function MainSearchSite() {
   return (
     <div className={styles.container}>
-        <MainSearch />
+      <MainSearch />
     </div>
-  )
+  );
 }
 
-export default MainSearchSite
+export default MainSearchSite;

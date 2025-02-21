@@ -1,9 +1,9 @@
 import Image from "next/image";
-import { convertToPersianNumber } from "@/core/utils/convertToPersianNumber";
-
-import editIcon from "../../../assets/icons/edit-2.svg";
-import styles from "../../../styles/atomsStyles/AccountContent.module.css";
 import AccountInformationForm from "@/components/organisms/AccountInformationForm";
+import { convertToPersianNumber } from "@/utils/convertToPersianNumber";
+
+import editIcon from "@/assets/icons/edit-2.svg";
+import styles from "@/styles/atomsStyles/AccountContent.module.css";
 
 function AccountContent({ isShowEditForm, setIsShowEditForm, mobile, email }) {
   return (
@@ -16,15 +16,23 @@ function AccountContent({ isShowEditForm, setIsShowEditForm, mobile, email }) {
             <span>{convertToPersianNumber(mobile)}</span>
           </p>
         </div>
-        {isShowEditForm ? (
-          <AccountInformationForm setIsShowEditForm={setIsShowEditForm} />
+        {isShowEditForm.AccountInformationForm ? (
+          <AccountInformationForm
+            setIsShowEditForm={setIsShowEditForm}
+            isShowEditForm={isShowEditForm}
+          />
         ) : (
           <div className={styles.emailAndEdit}>
             <p>
               ایمیل <span>{email ? email : "_"}</span>
             </p>
             <button
-              onClick={() => setIsShowEditForm(true)}
+              onClick={() =>
+                setIsShowEditForm({
+                  ...isShowEditForm,
+                  AccountInformationForm: true,
+                })
+              }
               className={styles.editBtn}
             >
               <Image src={editIcon} alt="edit-icon" />

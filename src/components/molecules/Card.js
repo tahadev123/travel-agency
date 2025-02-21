@@ -3,7 +3,7 @@ import DetailsCard from "../atoms/HomePageAtoms/DetailsCard";
 import ImageCard from "../atoms/HomePageAtoms/ImageCard";
 import TitleCard from "../atoms/HomePageAtoms/TitleCard";
 
-import styles from "../../styles/moleculesStyles/Card.module.css";
+import styles from "@/styles/moleculesStyles/Card.module.css";
 
 function Card({ data }) {
   return (

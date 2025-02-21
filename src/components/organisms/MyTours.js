@@ -1,6 +1,6 @@
 import MyTour from "../molecules/MyTour";
 
-import styles from "../../styles/organismsStyles/MyTours.module.css";
+import styles from "@/styles/organismsStyles/MyTours.module.css";
 
 function MyTours({ toursData }) {
   return (

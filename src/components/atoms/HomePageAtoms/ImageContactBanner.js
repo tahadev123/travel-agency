@@ -1,21 +1,12 @@
-"use client"
 import Image from "next/image";
-import styled from "styled-components";
 
-const Div = styled.div`
-  display: flex;
-  align-items: flex-end;
-
-  img {
-    margin-left: 45px;
-  }
-`;
+import styles from "@/styles/organismsStyles/BuyByPhoneBanner.module.css";
 
 function ImageContactBanner({ imageSrc }) {
   return (
-    <Div>
+    <div className={styles.image}>
       <Image src={imageSrc} width={308} height={225} alt="contactUsImage" />
-    </Div>
+    </div>
   );
 }
 

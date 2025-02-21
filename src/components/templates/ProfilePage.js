@@ -1,11 +1,15 @@
 "use client";
 import { useState } from "react";
-import { useGetUserData } from "@/core/services/queries";
+import { useGetUserData } from "@/services/queries";
 import ProfileBoxs from "../organisms/ProfileBoxs";
 
 function ProfilePage() {
   const { data } = useGetUserData();
-  const [isShowEditForm, setIsShowEditForm] = useState(false);
+  const [isShowEditForm, setIsShowEditForm] = useState({
+    AccountInformationForm: false,
+    PersonalInformationForm: false,
+    BankAccountForm: false,
+  });
 
   if (!data) return;
 

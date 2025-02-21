@@ -8,6 +8,7 @@ const PersonalInformationSchema = object({
   firstName: string().required("لطفا نام خود را وارد کنید"),
   lastName: string().required("لطفا نام خانوادگی خود را وارد کنید"),
   nationalCode: string("لطفا عدد وارد کنید").min(10, "کد ملی باید حداقل ١٠ رقم باشد"),
+  birthDate: string(),
   gender: string(),
 });
 

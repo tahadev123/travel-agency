@@ -1,16 +1,18 @@
 import Image from "next/image";
-import { convertToPersianNumber } from "@/core/utils/convertToPersianNumber";
+import { convertToPersianNumber } from "@/utils/convertToPersianNumber";
 
-import editIcon from "../../../assets/icons/edit-2.svg";
-import styles from "../../../styles/atomsStyles/BankAccountContent.module.css";
+import editIcon from "@/assets/icons/edit-2.svg";
+import styles from "@/styles/atomsStyles/BankAccountContent.module.css";
 
-function BankAccountContent({ setIsShowEditForm, payment }) {
+function BankAccountContent({ setIsShowEditForm, isShowEditForm, payment }) {
   return (
     <>
       <div className={styles.title}>
         <h4>اطلاعات حساب بانکی</h4>
         <button
-          onClick={() => setIsShowEditForm(true)}
+          onClick={() =>
+            setIsShowEditForm({ ...isShowEditForm, BankAccountForm: true })
+          }
           className={styles.editBtn}
         >
           <Image src={editIcon} alt="edit-icon" />

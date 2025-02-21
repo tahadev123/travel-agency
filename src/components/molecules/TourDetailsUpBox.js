@@ -1,10 +1,10 @@
 import ImageAndTitle from "../atoms/TourDetailsAtoms/ImageAndTitle";
-import styles from "../../styles/moleculesStyles/TourDetailsUpBox.module.css"
+import styles from "@/styles/moleculesStyles/TourDetailsUpBox.module.css"
 
-function TourDetailsUpBox({ data }) {
+function TourDetailsUpBox({ data, id }) {
   return (
     <div className={styles.upBox}>
-      <ImageAndTitle data={data} />
+      <ImageAndTitle data={data} id={id} />
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import AccountContent from "../atoms/ProfileAtoms/AccountContent";
-import styles from "../../styles/moleculesStyles/AccountInformation.module.css";
+import styles from "@/styles/moleculesStyles/AccountInformation.module.css";
 
 function AccountInformation({
   isShowEditForm,

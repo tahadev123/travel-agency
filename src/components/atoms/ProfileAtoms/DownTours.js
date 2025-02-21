@@ -1,6 +1,6 @@
-import { convertToPersianNumber } from "@/core/utils/convertToPersianNumber";
+import { convertToPersianNumber } from "@/utils/convertToPersianNumber";
 
-import styles from "../../../styles/atomsStyles/DownTours.module.css";
+import styles from "@/styles/atomsStyles/DownTours.module.css";
 
 function DownTours({ price }) {
   return (

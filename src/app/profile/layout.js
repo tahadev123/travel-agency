@@ -1,16 +1,16 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import AuthProvider from "@/partials/providers/AuthProvider";
-
-import profileIcon from "../../assets/icons/profile3.svg";
-import profileActiveIcon from "../../assets/icons/profile-active.svg";
-import SunFogIcon from "../../assets/icons/sun-fog.svg";
-import SunFogActiveIcon from "../../assets/icons/sun-fog-active.svg";
-import ConvertCardIcon from "../../assets/icons/convert-card.svg";
-import ConvertCardActiveIcon from "../../assets/icons/convert-card-active.svg";
-import styles from "../../styles/ProfileLayout.module.css";
 import { usePathname } from "next/navigation";
+import AuthProvider from "@/providers/AuthProvider";
+
+import profileIcon from "@/assets/icons/profile3.svg";
+import profileActiveIcon from "@/assets/icons/profile-active.svg";
+import SunFogIcon from "@/assets/icons/sun-fog.svg";
+import SunFogActiveIcon from "@/assets/icons/sun-fog-active.svg";
+import ConvertCardIcon from "@/assets/icons/convert-card.svg";
+import ConvertCardActiveIcon from "@/assets/icons/convert-card-active.svg";
+import styles from "@/styles/ProfileLayout.module.css";
 
 function layout({ children }) {
   const pathname = usePathname();

@@ -1,9 +1,9 @@
 "use client";
-import { useState, useContext } from "react";
-import ModalProvider from "@/partials/context/ShowModalContext";
+import { useContext } from "react";
+import ModalProvider from "@/context/ShowModalContext";
 import Image from "next/image";
-import closeIcon from "../../assets/icons/close.svg";
-import styles from "../../styles/organismsStyles/SendOTPForm.module.css";
+import closeIcon from "@/assets/icons/close.svg";
+import styles from "@/styles/organismsStyles/SendOTPForm.module.css";
 
 function SendOTPForm({ phoneNumber, setPhoneNumber, sendOtpHandler, error }) {
   const { setIsShowModal } = useContext(ModalProvider);

@@ -1,7 +1,7 @@
 import Navbar from "../molecules/Navbar";
 
-function Header() {
-  return <Navbar />;
+function Header({ pathname }) {
+  return <Navbar pathname={pathname} />;
 }
 
 export default Header;

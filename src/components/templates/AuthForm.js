@@ -1,13 +1,13 @@
 "use client";
 import { useState, useContext } from "react";
-import ModalProvider from "@/partials/context/ShowModalContext";
-import ModalContainer from "@/partials/containers/ModalContainer";
 import SendOTPForm from "../organisms/SendOTPForm";
 import CheckOTPForm from "../organisms/CheckOTPForm";
+import ModalProvider from "@/context/ShowModalContext";
+import ModalContainer from "@/containers/ModalContainer";
 
 import toast from "react-hot-toast";
-import { useSendOtp } from "@/core/services/mutations";
-import { isValidPhoneNumber } from "@/core/utils/validation";
+import { useSendOtp } from "@/services/mutations";
+import { isValidPhoneNumber } from "@/utils/validation";
 
 function AuthForm() {
   const { isShowModal, setIsShowModal } = useContext(ModalProvider);

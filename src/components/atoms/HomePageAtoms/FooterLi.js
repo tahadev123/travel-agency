@@ -1,31 +1,9 @@
-"use client";
 import Link from "next/link";
-import styled from "styled-components";
-
-const Div = styled.div`
-  display: flex;
-
-  h3 {
-    font-size: 24px;
-    color: #282828;
-  }
-
-  ul {
-    padding: 0;
-  }
-
-  li {
-    list-style: none;
-    font-size: 18px;
-    line-height: 27.9px;
-    color: #282828;
-    margin-bottom: 12px;
-  }
-`;
+import styles from "@/styles/Footer.module.css";
 
 function FooterLi() {
   return (
-    <Div>
+    <div className={styles.lis}>
       <ul>
         <h3>تورینو</h3>
         <li>
@@ -56,7 +34,7 @@ function FooterLi() {
           <Link href="/">پرسش و پاسخ</Link>
         </li>
       </ul>
-    </Div>
+    </div>
   );
 }
 

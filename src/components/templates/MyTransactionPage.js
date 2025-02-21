@@ -1,8 +1,9 @@
 "use client";
-import { useGetUserTransactions } from "@/core/services/queries";
-import styles from "../../styles/MyTransactionPage.module.css";
-import { convertToPersianDate } from "@/core/utils/formatDate";
-import { convertToPersianNumber } from "@/core/utils/convertToPersianNumber";
+import { useGetUserTransactions } from "@/services/queries";
+import { convertToPersianDate } from "@/utils/formatDate";
+import { convertToPersianNumber } from "@/utils/convertToPersianNumber";
+
+import styles from "@/styles/MyTransactionPage.module.css";
 
 function MyTransactionPage() {
   const { data } = useGetUserTransactions();

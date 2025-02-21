@@ -1,10 +1,10 @@
 "use client";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
-import { useGetUserData } from "@/core/services/queries";
+import { useGetUserData } from "@/services/queries";
 import { Oval } from "react-loader-spinner";
 
-import styles from "../../styles/AuthProvider.module.css";
+import styles from "@/styles/AuthProvider.module.css";
 
 function AuthProvider({ children }) {
   const router = useRouter();

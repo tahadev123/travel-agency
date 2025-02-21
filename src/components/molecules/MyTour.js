@@ -1,7 +1,7 @@
 import DownTours from "../atoms/ProfileAtoms/DownTours";
 import UpTours from "../atoms/ProfileAtoms/UpTours";
 
-import styles from "../../styles/moleculesStyles/MyTour.module.css";
+import styles from "@/styles/moleculesStyles/MyTour.module.css";
 
 function MyTour({ data }) {
   return (

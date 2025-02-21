@@ -1,11 +1,11 @@
 import Image from "next/image";
-import { setCookie } from "@/core/utils/cookie";
-import { convertToPersianNumber } from "@/core/utils/convertToPersianNumber";
+import { setCookie } from "@/utils/cookie";
+import { convertToPersianNumber } from "@/utils/convertToPersianNumber";
 
-import profileIcon from "../../assets/icons/profile.svg";
-import profile2Icon from "../../assets/icons/profile2.svg";
-import logOutIcon from "../../assets/icons/logout.svg";
-import styles from "../../styles/organismsStyles/ProfileBox.module.css";
+import profileIcon from "@/assets/icons/profile.svg";
+import profile2Icon from "@/assets/icons/profile2.svg";
+import logOutIcon from "@/assets/icons/logout.svg";
+import styles from "@/styles/organismsStyles/ProfileBox.module.css";
 import Link from "next/link";
 
 function ProfileBox({ data }) {

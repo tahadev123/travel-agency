@@ -1,11 +1,11 @@
-import Checkout from "@/components/templates/CheckoutPage"
+import Checkout from "@/components/templates/CheckoutPage";
 
-function CheckoutPage() {
+function CheckoutPage({ params }) {
   return (
     <>
-      <Checkout />
+      <Checkout id={params.tourId} />
     </>
-  )
+  );
 }
 
-export default CheckoutPage
+export default CheckoutPage;

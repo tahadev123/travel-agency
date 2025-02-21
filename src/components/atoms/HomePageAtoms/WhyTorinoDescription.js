@@ -1,23 +1,8 @@
-"use client"
-import styled from "styled-components";
-
-const Div = styled.div`
-  span {
-    font-size: 24px;
-  }
-
-  p {
-    text-align: justify;
-    font-size: 20px;
-    width: 500px;
-    word-spacing: 2px;
-    line-height: 44px;
-  }
-`;
+import styles from "@/styles/WhyTorino.module.css";
 
 function WhyTorinoDescription() {
   return (
-    <Div>
+    <div className={styles.description}>
       <span>تور طبیعت گردی و تاریخی</span>
       <p>
         اگر دوست داشته باشید که یک جاذبه طبیعی را از نزدیک ببینید و در دل طبیعت
@@ -26,7 +11,7 @@ function WhyTorinoDescription() {
         تاریخی یک مقصد خاص بازدید کنید، می‌توانید تورهای فرهنگی و تاریخی را
         خریداری کنید.
       </p>
-    </Div>
+    </div>
   );
 }
 

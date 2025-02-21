@@ -1,17 +1,17 @@
 "use client";
 import Image from "next/image";
-import toast from "react-hot-toast";
 import { useContext, useState, useRef, useEffect } from "react";
+import toast from "react-hot-toast";
 import ProfileBox from "@/components/organisms/ProfileBox";
-import { useGetUserData } from "@/core/services/queries";
-import { setCookie } from "@/core/utils/cookie";
-import { convertToPersianNumber } from "@/core/utils/convertToPersianNumber";
-import ModalProvider from "@/partials/context/ShowModalContext";
+import { useGetUserData } from "@/services/queries";
+import { setCookie } from "@/utils/cookie";
+import { convertToPersianNumber } from "@/utils/convertToPersianNumber";
+import ModalProvider from "@/context/ShowModalContext";
 
-import loginIcon from "../../../assets/icons/login.svg";
-import userIcon from "../../../assets/icons/frame.svg";
-import arrowDownIcon from "../../../assets/icons/arrow-down.svg";
-import styles from "../../../styles/atomsStyles/RegisterAndLoginButton.module.css";
+import loginIcon from "@/assets/icons/login.svg";
+import userIcon from "@/assets/icons/frame.svg";
+import arrowDownIcon from "@/assets/icons/arrow-down.svg";
+import styles from "@/styles/atomsStyles/RegisterAndLoginButton.module.css";
 
 function RegisterAndLoginButton() {
   const { setIsShowModal } = useContext(ModalProvider);

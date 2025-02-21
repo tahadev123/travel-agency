@@ -1,23 +1,13 @@
-"use client";
 import ContactBanner from "../molecules/ContactBanner";
 import ContactButton from "../molecules/ContactButton";
-import styled from "styled-components";
-
-const Div = styled.div`
-    width: calc(98% + 7px);
-    height: 251px;
-    display: flex;
-    border: 1px solid #00000040;
-    border-radius: 10px;
-    margin: 100px 0;
-`;
+import styles from "@/styles/organismsStyles/BuyByPhoneBanner.module.css";
 
 function BuyByPhoneBanner() {
   return (
-    <Div>
+    <div className={styles.content}>
       <ContactBanner />
       <ContactButton />
-    </Div>
+    </div>
   );
 }
 
