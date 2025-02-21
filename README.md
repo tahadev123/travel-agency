@@ -1,36 +1,28 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This project is made with NextJS
 
-## Getting Started
+## Getting Started👇
+In the first step, you must have the project in your system💻
+Paste this command in your terminal👇
 
-First, run the development server:
+```
+  git clone https://github.com/tahadev123/travel-agency
+```
+or
+Click on the green button at the top of the page with the name "Code" and click Download Zip
+Congratulations, the project files have been uploaded to your system🎉🎊
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+In the next step, you have to run the project📌
+Paste this code in the terminal of your system👇
+```
+  npm run dev
+```
+The project will open for you on port 3000
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.✔
+
+And then, before that, to run the project api, you must download the [api file of this project](https://github.com/tahadev123/travel-agency-api) from my GitHub, like the main project file, and enter the following command in the terminal.👇
+```
+  npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+And the project api runs on port 6500🎉🎊
+If it is run on a different port, go to the .env file of the main project and change the port📌✔
