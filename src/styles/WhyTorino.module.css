@@ -10,6 +10,10 @@
   right: 3%;
 }
 
+.rightOfBox {
+  width: 50%;
+}
+
 /* description */
 
 .description span {
@@ -34,6 +38,10 @@
   justify-content: center;
   position: absolute;
   bottom: 20%;
+}
+
+.stepBox span {
+  font-size: 24px;
 }
 
 .arrowRight {
@@ -140,5 +148,126 @@
     position: relative;
     right: 21%;
     width: 34%;
+  }
+}
+
+@media (max-width: 1110px) {
+  .questionIcon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .questionIcon span:first-child {
+    font-size: 30px;
+  }
+
+  .whyTorino h1 {
+    font-size: 34px;
+  }
+
+  .description span {
+    font-size: 20px;
+  }
+
+  .description p {
+    font-size: 18px;
+    width: 380px;
+  }
+
+  .box {
+    right: -2%;
+  }
+}
+
+@media (max-width: 950px) {
+  .container {
+    flex-wrap: wrap;
+  }
+
+  .rightOfBox {
+    width: 100%;
+  }
+
+  .description {
+    display: none;
+  }
+
+  .box {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    margin-right: 11%;
+  }
+}
+
+@media (max-width: 650px) {
+  .travelImage1 {
+    width: 289px;
+    height: 379px;
+  }
+
+  .travelImage2 {
+    width: 286px;
+    height: 316px;
+  }
+
+  .travelImage4 {
+    width: 156px;
+    height: 233px;
+  }
+
+  .travelImage3 {
+    width: 116px;
+    height: 173px;
+  }
+
+  .stepBox {
+    width: 282px;
+    bottom: 35%;
+  }
+
+  .stepBox span {
+    font-size: 21px;
+  }
+
+  .arrowRight {
+    width: 24px;
+    height: 24px;
+  }
+
+  .arrowLeft {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media (max-width: 490px) {
+  .box {
+    right: -7%;
+  }
+
+  .stepBox {
+    width: 240px;
+    bottom: 44%;
+  }
+
+  .travelImage1 {
+    width: 239px;
+    height: 329px;
+  }
+
+  .travelImage2 {
+    width: 236px;
+    height: 266px;
+  }
+
+  .travelImage4 {
+    width: 106px;
+    height: 183px;
+  }
+
+  .travelImage3 {
+    width: 66px;
+    height: 123px;
   }
 }

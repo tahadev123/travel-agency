@@ -8,6 +8,21 @@
   margin-right: 20px;
 }
 
+.hamburContainer ul {
+  margin: 0;
+}
+
+.hamburContainer li {
+  display: flex;
+  align-items: center;
+}
+
+.hamburContainer li img {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 10px;
+}
+
 .container a {
   font-size: 16px;
 }

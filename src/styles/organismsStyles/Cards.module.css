@@ -1,8 +1,14 @@
 .cards {
-  margin-top: 300px;
+  margin-top: 250px;
 }
 
 .cards h1 {
   font-size: 32px;
   color: #000;
+}
+
+@media (max-width: 1000px) {
+  .cards {
+    margin-top: 140px;
+  }
 }

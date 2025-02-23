@@ -28,7 +28,7 @@ function WhyTorinoNextStep({ slider, setSlider }) {
         className={styles.arrowRight}
         onClick={increaseHandler}
       />
-      <span style={{ fontSize: "24px" }}>
+      <span>
         ۴ / {convertToPersianNumber(slider)}
       </span>
       <Image

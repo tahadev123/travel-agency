@@ -9,9 +9,7 @@ function Navbar({ pathname }) {
     <>
       <div className={styles.container}>
         <div>
-          <Link href="/">
-            <Logo />
-          </Link>
+          <Logo />
           <HeaderLi pathname={pathname} />
         </div>
         <RegisterAndLoginButton />

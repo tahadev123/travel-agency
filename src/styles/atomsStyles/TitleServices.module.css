@@ -10,3 +10,19 @@
 .titles p {
   font-size: 16px;
 }
+
+@media (max-width: 850px) {
+  .titles {
+    width: 350px;
+  }
+}
+
+@media (max-width: 650px) {
+  .titles h3 {
+    font-size: 14px;
+  }
+
+  .titles p {
+    font-size: 12px;
+  }
+}

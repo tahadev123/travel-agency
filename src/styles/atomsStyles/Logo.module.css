@@ -7,6 +7,39 @@
   display: none;
 }
 
+.hamburgerMenuBox {
+  position: relative;
+}
+
+.hamburgerMenuBox button {
+  background-color: transparent;
+  border: none;
+  margin-top: 10px;
+}
+
+.box {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 209px;
+  border-radius: 12px 0 0 12px;
+  background-color: #fff;
+  color: #fff;
+  box-shadow: 0 0 50px #ccc;
+  z-index: 100;
+}
+
+.hamburgerMenuBox a {
+  display: block;
+  padding: 10px;
+  font-size: 16px;
+  color: #282828;
+  text-decoration: none;
+  margin-bottom: 5px;
+  background-color: #fff;
+}
+
 @media (max-width: 1070px) {
   .logo {
     width: 126px;
