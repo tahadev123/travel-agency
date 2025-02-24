@@ -71,3 +71,72 @@
 .checkout button:hover {
   background-color: #10411b;
 }
+
+@media (max-width: 1100px) {
+  .tourImage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .tourImage img {
+    width: 60%;
+    margin-right: 0;
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .title h2 {
+    margin: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .tourImage {
+    padding: 20px;
+  }
+
+  .tourImage img {
+    width: 100%;
+    margin: 0;
+  }
+
+  .title {
+    margin: 0;
+  }
+
+  .title h2 {
+    font-size: 24px;
+  }
+
+  .startAndEnd {
+    font-size: 15px;
+  }
+
+  .option {
+    font-size: 13px;
+  }
+
+  .option img {
+    width: 14px;
+  }
+
+  .checkout p {
+    font-size: 24px;
+  }
+
+  .checkout span {
+    font-size: 10px;
+  }
+
+  .checkout button {
+    width: 154px;
+    height: 42px;
+    font-size: 20px;
+  }
+}

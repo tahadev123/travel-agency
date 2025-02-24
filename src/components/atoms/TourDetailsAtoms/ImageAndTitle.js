@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import toast from "react-hot-toast";
@@ -17,19 +17,16 @@ function ImageAndTitle({ data, id }) {
   const { mutate } = useAddToCart();
 
   const addHandler = () => {
-    mutate(
-      id,
-      {
-        onSuccess: (data) => {
-          toast.success(data.data.message);
-          router.push(`/checkout/${id}`);
-        },
-        onError: (error) => {
-          toast.error(error.message);
-          console.log(error);
-        },
-      }
-    );
+    mutate(id, {
+      onSuccess: (data) => {
+        toast.success(data.data.message);
+        router.push(`/checkout/${id}`);
+      },
+      onError: (error) => {
+        toast.error(error.message);
+        console.log(error);
+      },
+    });
   };
 
   return (
@@ -38,14 +35,16 @@ function ImageAndTitle({ data, id }) {
         <img src={data.image} alt="tourImage" />
       </div>
       <div className={styles.tourDetails}>
-        <h2>{data.title}</h2>
-        <p className={styles.startAndEnd}>
-          {`${convertToPersianNumber(
-            calculateTripTime(data.startDate, data.endDate)
-          )} روز و ${convertToPersianNumber(
-            calculateTripTime(data.startDate, data.endDate) - 1
-          )} شب`}
-        </p>
+        <div className={styles.title}>
+          <h2>{data.title}</h2>
+          <p className={styles.startAndEnd}>
+            {`${convertToPersianNumber(
+              calculateTripTime(data.startDate, data.endDate)
+            )} روز و ${convertToPersianNumber(
+              calculateTripTime(data.startDate, data.endDate) - 1
+            )} شب`}
+          </p>
+        </div>
         <div className={styles.options}>
           <p className={styles.option}>
             <Image src={userTickIcon} alt="userTickIcon" />

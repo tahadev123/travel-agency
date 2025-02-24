@@ -1,3 +1,9 @@
 .upBox {
   display: flex;
 }
+
+@media (max-width: 1100px) {
+  .upBox {
+    flex-wrap: wrap;
+  }
+}
