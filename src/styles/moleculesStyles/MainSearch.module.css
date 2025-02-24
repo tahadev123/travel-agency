@@ -33,6 +33,7 @@
   border: 1px solid #00000026;
   border-radius: 20px;
   margin: 0 auto;
+  padding: 10px 13px;
   gap: 10px;
   backdrop-filter: blur(8px);
 }
@@ -75,12 +76,17 @@
 }
 
 @media (max-width: 1128px) {
+  .content {
+    margin-top: 17%;
+  }
+
   .searchBar {
     border: none;
     width: 100%;
     height: auto;
     display: flex;
     flex-wrap: wrap;
+    padding: 0;
   }
 
   .searchBar button {
@@ -112,6 +118,6 @@
 
 @media (max-width: 720px) {
   .title {
-    font-size: 16px;
+    font-size: 20px;
   }
 }

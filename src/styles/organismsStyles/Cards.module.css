@@ -1,5 +1,5 @@
 .cards {
-  margin-top: 250px;
+  margin-top: 300px;
 }
 
 .cards h1 {
@@ -10,5 +10,11 @@
 @media (max-width: 1000px) {
   .cards {
     margin-top: 140px;
+  }
+}
+
+@media (max-width: 600px) {
+  .cards {
+    margin-top: 80px;
   }
 }

@@ -247,27 +247,44 @@
   }
 
   .stepBox {
-    width: 240px;
-    bottom: 44%;
+    width: 212px;
+    bottom: 48%;
+  }
+
+  .stepBox span {
+    font-size: 18px;
+  }
+
+  .arrowRight {
+    width: 20px;
+    height: 20px;
+  }
+
+  .arrowLeft {
+    width: 20px;
+    height: 20px;
   }
 
   .travelImage1 {
-    width: 239px;
-    height: 329px;
+    width: 214px;
+    height: 304px;
   }
 
   .travelImage2 {
-    width: 236px;
-    height: 266px;
+    width: 211px;
+    height: 241px;
+    right: 39px;
   }
 
   .travelImage4 {
-    width: 106px;
-    height: 183px;
+    width: 81px;
+    height: 158px;
+    right: 200px;
   }
 
   .travelImage3 {
-    width: 66px;
-    height: 123px;
+    width: 41px;
+    height: 98px;
+    right: 258px;
   }
 }

@@ -50,9 +50,28 @@
   font-size: 18px;
   font-family: "yekan-bakh";
   margin-top: 7px;
+  margin-right: 9%;
   transition: all ease-in 0.1s;
 }
 
 .container button:hover {
   background-color: #10411b;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 358px;
+  }
+
+  .container img {
+    left: -43%;
+  }
+
+  .container h4 {
+    font-size: 22px;
+  }
+
+  .container button {
+    width: 278px;
+  }
 }
