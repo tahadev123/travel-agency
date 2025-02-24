@@ -69,3 +69,17 @@
   color: #00000080;
   font-size: 14px;
 }
+
+@media (max-width: 672px) {
+  .nameInput,
+  .codeMeliInput,
+  .dateInput,
+  .genderInput {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .genderInput select {
+    width: 98%;
+  }
+}

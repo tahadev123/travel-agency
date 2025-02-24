@@ -9,3 +9,9 @@
   margin-top: 35px;
   padding-bottom: 23px;
 }
+
+@media (max-width: 1150px) {
+  .checkoutForm {
+    width: 100%;
+  }
+}

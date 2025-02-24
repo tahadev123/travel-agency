@@ -5,3 +5,10 @@
   background-color: #fff;
   margin-top: 35px;
 }
+
+@media (max-width: 1150px) {
+  .checkoutBox {
+    width: 100%;
+    margin-bottom: 70px;
+  }
+}

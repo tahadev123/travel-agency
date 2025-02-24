@@ -50,7 +50,6 @@
   font-size: 18px;
   font-family: "yekan-bakh";
   margin-top: 7px;
-  margin-right: 9%;
   transition: all ease-in 0.1s;
 }
 
@@ -73,5 +72,6 @@
 
   .container button {
     width: 278px;
+    margin-right: 9%;
   }
 }
